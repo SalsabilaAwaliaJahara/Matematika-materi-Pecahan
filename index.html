@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soal Evaluasi Kelas V — Matematika: Pecahan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="badge-row">
+        <span class="badge">Kelas V SD</span>
+        <span class="badge badge-secondary">Matematika • Materi Pecahan</span>
+        <span class="badge badge-outline">25 Soal • 60 Menit</span>
+      </div>
+      <h1>Soal Evaluasi Matematika Kelas V</h1>
+      <p class="subtitle">Materi Pokok: Pecahan Senilai, Konversi, Perbandingan, Operasi Hitung, dan Soal Cerita</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card identity-card">
+      <div class="identity-grid">
+        <div class="field">
+          <label for="student-name">Nama Siswa</label>
+          <input type="text" id="student-name" placeholder="Tuliskan nama lengkap..." />
+        </div>
+        <div class="field">
+          <label for="student-number">Nomor Absen</label>
+          <input type="text" id="student-number" placeholder="Contoh: 12" />
+        </div>
+        <div class="field timer-box">
+          <span class="timer-label">Waktu Tersisa</span>
+          <div class="timer-controls">
+            <span id="timer-display" class="timer-value">60:00</span>
+            <button type="button" id="toggle-timer" class="btn btn-small btn-outline">Mulai Timer</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button type="button" id="teacher-mode-btn" class="btn btn-outline">Mode Guru: Nonaktif</button>
+        <button type="button" id="print-btn" class="btn btn-outline">Cetak Soal</button>
+        <button type="button" id="reset-btn" class="btn btn-outline btn-danger-outline">Ulangi Evaluasi</button>
+      </div>
+    </section>
+
+    <section class="card instructions-card">
+      <h2>Petunjuk Pengerjaan</h2>
+      <ol>
+        <li>Isilah nama siswa dan nomor absen sebelum mengerjakan.</li>
+        <li><strong>Bagian A (15 Pilihan Ganda)</strong> dan <strong>Bagian B (5 Isian Singkat)</strong> dinilai otomatis oleh sistem (total 50 poin).</li>
+        <li>Untuk menuliskan pecahan campuran pada isian singkat, gunakan format seperti <code>3 11/12</code> atau pecahan biasa <code>3/4</code>.</li>
+        <li><strong>Bagian C (5 Uraian)</strong> dikerjakan pada buku tugas atau lembar cetak, dan dapat diperiksa menggunakan rubrik pembahasan (total 50 poin).</li>
+      </ol>
+    </section>
+
+    <section id="result-banner" class="card result-card hidden" aria-live="polite"></section>
+
+    <form id="quiz-form">
+      <section class="section-block">
+        <div class="section-header">
+          <h2>A. Pilihan Ganda</h2>
+          <span class="section-meta">15 Soal • Bobot 2 poin/soal</span>
+        </div>
+        <div id="pg-container" class="questions-list"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-header">
+          <h2>B. Isian Singkat</h2>
+          <span class="section-meta">5 Soal • Bobot 4 poin/soal</span>
+        </div>
+        <div id="isian-container" class="questions-list"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-header">
+          <h2>C. Soal Uraian</h2>
+          <span class="section-meta">5 Soal • Bobot 10 poin/soal</span>
+        </div>
+        <div id="uraian-container" class="questions-list"></div>
+      </section>
+
+      <div class="submit-bar no-print">
+        <button type="submit" class="btn btn-primary btn-large">Periksa Jawaban (Bagian A &amp; B)</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer no-print">
+    <div class="container">
+      <p>Soal Evaluasi Matematika Kelas V — Materi Pecahan • Dapat digunakan secara daring maupun dicetak.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
